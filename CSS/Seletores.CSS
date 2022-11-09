@@ -1,0 +1,25 @@
+/* em HTML é ID = em CSS é # */
+/* em HTML é class = em CSS é . */
+#principal {
+    text-align:  center;
+    color: aqua;
+}
+h1 {
+    text-align: center;
+    color: blue;
+}
+.basico {
+    background-color: crimson;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.intermediario {
+    background-color: crimson;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.avançado {
+    background-color: crimson;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
