@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de idade</title>
+
+    <style>
+        
+        body{
+            background-color: aqua;
+        }
+        h1{
+            position: ;
+            color: darkslateblue;
+            font-family: cursive;
+            font-size: 60px;
+        }
+        .conteudo{
+            text-align: center;
+            padding: 50px;
+        }
+        p{
+            font-size: 35px;
+        }
+        #button{
+            font-size: 17px;
+            background-color: rgb(196, 79, 246);
+            border-radius: 10px;
+        }
+        #barra{
+            font-size: 20px;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="conteudo">
+    <h1>Sistema de idade</h1>
+    <p> Digite sua idade: <input id = 'barra' type="number" name="txtvel" id="txtvel"></p>
+    <input id = 'button' type="button" value="Verificar" onclick="calcular()">
+    <div id="res">
+</div>
+    </div> 
+    <script>
+        function calcular(){
+            var txtv = window.document.querySelector('input#txtvel')
+            var res = window.document.querySelector ('div#res')
+            var idade = Number (txtv.value)
+            res.innerHTML = `<p> Você tem ${idade} de idade</p>`
+
+            if (idade > 18){
+                res.innerHTML += `<p>Você é maior de idade!</p>`
+                res.innerHTML += `<p>Pode beber!</p>`
+            }
+            
+            else
+                {res.innerHTML += `<p>Você é menor de idade!.</p>`
+                res.innerHTML += `<p> Beba água! </p>`}
+        }
+    </script>
+</body>
+</html>
